@@ -19,7 +19,7 @@ const FormListPage = () => {
             </div>
 
             <ul className='formTemplateList'>
-              <FormTemplate>
+              <FormTemplate onClick={()=>{window.location.href = '/form'}}>
                 <div className='formImg'>
                   <img src={formBlank} alt='빈 양식'/>
                 </div>
@@ -66,8 +66,14 @@ const FormList = styled.div`
   background-color: #f1f3f4;
   .innerWrapper {
     width: 1150px;
-    border: 1px dotted lightgray;
+    // border: 1px dotted lightgray;
     margin: 0 auto;
+  }
+  .contractedHeader{
+    h2 {
+      font-weight:400;
+      padding: 30px 0;
+    }
   }
   .formTemplateList {
     display:grid;
@@ -79,7 +85,6 @@ const FormList = styled.div`
 const FormTemplate = styled.li`
 display:inline-block;
 width: 171px;
-height: 128px;
 margin-bottom: 45px;
 .formImg{
   border: 1px solid rgb(218,220,224);
@@ -89,6 +94,7 @@ margin-bottom: 45px;
   cursor: pointer;
     img{
       width:100%;
+      display:block;
     }
     &:hover {
       border: 1px solid #673ab7;

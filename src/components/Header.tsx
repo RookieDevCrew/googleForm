@@ -41,6 +41,7 @@ const HeaderContainer = styled.header`
     justify-content: space-between;
     padding: 8px;
     color:#5f6368;
+    background-color: #fff;
     div {}
     .btn:hover {
         background-color: #ebecec;

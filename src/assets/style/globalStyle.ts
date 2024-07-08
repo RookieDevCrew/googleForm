@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
- 
+import { createGlobalStyle } from 'styled-components';
+
 const GlobalStyles = createGlobalStyle`
     * {
         margin:0;
@@ -56,5 +56,5 @@ const GlobalStyles = createGlobalStyle`
         fill: currentColor;
     }
 `;
- 
+
 export default GlobalStyles;
